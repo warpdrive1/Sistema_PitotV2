@@ -123,7 +123,6 @@ void loop()
       
 // Datos de LM35
    temperatura_remanso = analogRead(PIN_LM35)*0.488759;
-   temperatura_remanso = 15;
    
    altura = 44330 * (1.0 - pow(presion_estatica/PRESION_BASE, 0.1903)) - altitud; // Sacamos altura con la referencia de presiones en hPa, como se utiliza la presión
                                                                                   // de referencia a elevación cero, nos da alturas, si no, nos daria altitud
